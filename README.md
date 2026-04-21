@@ -2,8 +2,6 @@
 
 A clinical data visualization tool that lets users search any drug and instantly see FDA-reported adverse events visualized across multiple interactive charts.
 
-Built as a portfolio project to demonstrate health data visualization skills using React and the OpenFDA public API.
-
 ## Live Demo
 https://clinicaltrace.netlify.app/
 
