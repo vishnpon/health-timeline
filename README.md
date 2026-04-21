@@ -26,7 +26,7 @@ https://clinicaltrace.netlify.app/
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/health-timeline.git
+git clone https://github.com/vishnpon/health-timeline.git
 cd health-timeline
 
 # Install dependencies
@@ -36,7 +36,7 @@ npm install
 npm run dev
 ```
 
-Then open [http://localhost:5174](http://localhost:5174) in your browser.
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## How It Works
 
@@ -50,3 +50,6 @@ Then open [http://localhost:5174](http://localhost:5174) in your browser.
 Uses the [OpenFDA Drug Adverse Event API](https://open.fda.gov/apis/drug/event/) — completely free with no authentication required.
 
 Example query:
+```
+https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:"aspirin"&limit=100
+```
