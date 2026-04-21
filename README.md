@@ -1,47 +1,16 @@
-# ClinicalTrace — Drug Adverse Event Timeline
+# React + Vite
 
-A clinical data visualization tool that lets users search any drug and instantly see FDA-reported adverse events visualized across multiple interactive charts.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- **Event Timeline** — plots 100 adverse event reports chronologically, color-coded by severity (red = serious, blue = non-serious)
-- **Top 10 Reactions** — proportional bar layout showing the most frequently reported reactions for the searched drug
-- **Reports by Country** — bar chart breaking down which countries submitted the most reports
-- **Serious vs Non-serious Over Time** — line chart showing how severity trends across the reporting window
-- **Event Detail Card** — click any dot on the timeline to see full report details including patient age, sex, country, and all reported reactions
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Tech Stack
+## React Compiler
 
-- **React** — component-based UI
-- **Vite** — development server and build tool
-- **Recharts** — charting library for the timeline, bar, and line charts
-- **OpenFDA API** — free public FDA adverse event reporting database, no API key required
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Getting Started
+## Expanding the ESLint configuration
 
-```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/health-timeline.git
-cd health-timeline
-
-# Install dependencies
-npm install
-
-# Start the dev server
-npm run dev
-```
-
-Then open [http://localhost:5174](http://localhost:5174) in your browser.
-
-## How It Works
-
-1. User searches a drug name (e.g. "aspirin", "ibuprofen")
-2. App fetches 100 reports from the OpenFDA `/drug/event` endpoint
-3. Reports are parsed and distributed across four visualizations
-4. Clicking any timeline dot opens a detailed event card
-
-## API
-
-Uses the [OpenFDA Drug Adverse Event API](https://open.fda.gov/apis/drug/event/) — completely free with no authentication required.
-
-Example query:
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
