@@ -2,11 +2,6 @@
 
 A clinical data visualization tool that lets users search any drug and instantly see FDA-reported adverse events visualized across multiple interactive charts.
 
-Built as a portfolio project to demonstrate health data visualization skills using React and the OpenFDA public API.
-
-## Live Demo
-[health-timeline.vercel.app](https://health-timeline.vercel.app)
-
 ## Features
 
 - **Event Timeline** — plots 100 adverse event reports chronologically, color-coded by severity (red = serious, blue = non-serious)
@@ -36,7 +31,7 @@ npm install
 npm run dev
 ```
 
-Then open [http://localhost:5173](http://localhost:5173) in your browser.
+Then open [http://localhost:5174](http://localhost:5174) in your browser.
 
 ## How It Works
 
