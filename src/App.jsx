@@ -5,6 +5,7 @@ import EventDetail from "./components/EventDetail";
 import ReactionChart from "./components/ReactionChart";
 import CountryChart from "./components/CountryChart";
 import SeverityTrendChart from "./components/SeverityTrendChart";
+import ResearchPanel from "./components/ResearchPanel";
 
 function App() {
   const [events, setEvents] = useState([]);
@@ -109,6 +110,10 @@ function App() {
             {/* Severity trend */}
             <div style={{ backgroundColor: "white", borderRadius: 12, padding: "1.5rem", boxShadow: "0 1px 4px rgba(0,0,0,0.08)", marginBottom: "1.5rem" }}>
               <SeverityTrendChart events={events} />
+            </div>
+            {/* Research panel */}
+            <div style={{ backgroundColor: "white", borderRadius: 12, padding: "1.5rem", boxShadow: "0 1px 4px rgba(0,0,0,0.08)", marginBottom: "1.5rem" }}>
+              <ResearchPanel drugName={drugName} />
             </div>
 
             {/* Detail card */}
